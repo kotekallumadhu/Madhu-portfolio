@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="about-section">
+    <h2>About Me</h2>
+    <div class="about-grid">
+        <div class="about-card">
+            <h3>Objective</h3>
+            <p>Aspiring IT professional with skills in Python, Flask, HTML, and Bootstrap. Proven 
+experience in building AI-powered and web-based applications. Seeking an entry-level 
+software developer role to apply and grow my technical knowledge.</p>
+        </div>
+        <div class="about-card">
+            <h3>Knowledge</h3>
+            <ul>
+                <li>Python, Flask, HTML, CSS</li>
+                <li>APIs, GitHub, SQLite</li>
+                <li>Web Development, AI Applications</li>
+            </ul>
+        </div>
+        <div class="about-card">
+            <h3>Education</h3>
+            <ul>
+                <li><b>BCA</b>(Bachelor of Computer Applications)</li>
+                <li>Sri Chaitanya Degree College,Bellary 2022-2025</li>
+                <li>CGPA:<b> 8.5 currenlty</b></li>
+                <li><b>PUC</b>(Pre-University Course)</li>
+                <li>Sri Chaitanya PU College, Bellary 2020-2022</li>
+                <li>percentage: <b>67.5%</b></li>
+            </ul>
+        </div>
+        <div class="about-card">
+            <h3>Strengths</h3>
+            <ul>
+                <li>Quick Learner</li>
+                <li>Team Player</li>
+                <li>Problem Solver</li>
+            </ul>
+        </div>
+        <div class="about-card">
+            <h3>Technical Skills</h3>
+            <ul>
+                <li><b>Languages:</b>Python, C Language.</li>
+                <li><b>Web Technologies:</b>HTML, CSS, Basic Web Desinging.</li>
+                <li><b>Frameworks:</b>Flask, Bootstrap.</li>
+                <li><b>Database:</b>Oracle, SQL, SQLite</li>
+                <li><b>Others:</b>APIs, GitHub.</li>
+                <li><b>OS:</b>Windows</li>
+            </ul>
+        </div>
+        <div class="about-card">
+            <h3>Certificates</h3>
+            <ul>
+                <li>Python full stack-Kode Mapa</li>
+                <li>Front-end Web Development(HTML)-Great Learning</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- Inside templates/about.html or index.html under About section -->
+<div class="about-resume-button">
+    <a href="{{ url_for('resume') }}">
+        <button style=" padding: 5px 20px; background-color: #007BFF; color: white; border: none; border-radius: 10px;">
+            Download My Resume
+        </button>
+    </a>
+</div>
+
+{% endblock %}

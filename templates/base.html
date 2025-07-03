@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Madhu's Portfolio</title>
+        <meta name="description" content="Madhu's personal portfolio website.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <header>
+            <div style="display: flex; align-items: center;">
+                <img src="{{ url_for('static', filename='profile.jpg') }}" alt="Profile Photo" class="profile-photo">
+                <span style="font-size:1.5rem;font-weight:600;">Madhu | Full Stack Developer</span>
+            </div>
+            <nav>
+                <a href="{{ url_for('index') }}">Home</a>
+                <a href="{{ url_for('about') }}">About</a>
+                <a href="{{ url_for('projects') }}">Projects</a>
+                <a href="{{ url_for('contact') }}">Contact</a>
+            </nav>
+        </header>
+        <main>
+            {% block content %}{% endblock %}
+        </main>
+        <footer style="text-align:center;padding:1.5rem 0 0.5rem 0;color:#888;">
+            &copy; {{ 2025 }} Madhu. All rights reserved.
+        </footer>
+        <script>
+        // Simple greeting animation
+        window.onload = function() {
+            const greet = document.querySelector('.greeting');
+            if(greet) {
+                greet.style.opacity = 0;
+                setTimeout(() => { greet.style.opacity = 1; }, 400);
+            }
+        };
+        </script>
+    </body>
+</html>

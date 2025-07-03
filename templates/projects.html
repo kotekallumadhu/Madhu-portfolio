@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="projects-section">
+    <h2>My Projects</h2>
+    <div class="project-card">
+        <h3>AI-Based Interview Coach</h3>
+        <p><strong>Technologies:</strong> Frontend: HTML, CSS, JavaScript | Backend: Python, Flask | APIs: Google Gemini API | Others: GitHub, SQLite (optional)</p>
+        <p><strong>Description:</strong> The AI-Based Interview Coach is an intelligent web application designed to help users prepare for job interviews by simulating real-time interview experiences. The system uses speech-to-text, Google Gemini API, and Flask to provide dynamic, interactive coaching and feedback.</p>
+        <ul>
+            <li><strong>AI-Powered Questioning:</strong> Uses Google Gemini API to ask follow-up questions intelligently based on user responses.</li>
+            <li><strong>Smart Feedback & Summary:</strong> Provides a concise summary of the interview session, including areas of improvement.</li>
+            <li><strong>Web Interface with Flask:</strong> Clean, user-friendly interface built using Python Flask framework.</li>
+        </ul>
+        <p><strong>Purpose:</strong> To help students and job seekers build confidence, improve their interview skills, and receive AI-powered feedback anytime, anywhere.</p>
+    </div>
+    <div class="project-card">
+        <h3>YouTube Video Downloader (Frontend)</h3>
+        <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+        <p><strong>Description:</strong> The YouTube Video Downloader is a Python-based application that allows users to download YouTube videos by simply pasting the video URL. It supports downloading videos in multiple resolutions, extracting audio-only files, and saving them locally. The tool is useful for offline access to educational, entertainment, or tutorial content.</p>
+        <p><strong>Purpose:</strong> To enable users to download YouTube content for offline use, especially for students or professionals who want to save learning videos, tutorials, or songs without relying on internet access.</p>
+    </div>
+</div>
+{% endblock %}

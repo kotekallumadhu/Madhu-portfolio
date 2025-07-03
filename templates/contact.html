@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="contact-section">
+    <h2>Contact Me</h2>
+    <div class="contact-links">
+        <a href="https://linkedin.com/in/kotekallu-madhu-928915335" target="_blank">LinkedIn</a>
+        <a href="https://github.com/kotekallumadhu" target="_blank">GitHub</a>
+        <a href="mailto:kotekallumadhu@gmail.com">Email</a>
+    </div>
+    <form method="POST" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+   
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <ul class="flashes">
+        {% for message in messages %}
+          <li>{{ message }}</li>
+        {% endfor %}
+        </ul>
+      {% endif %}
+    {% endwith %}
+</div>
+{% endblock %}
